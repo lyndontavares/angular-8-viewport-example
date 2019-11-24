@@ -1,0 +1,27 @@
+.grid-tile {
+  background-color: #9E9E9E;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, .87);
+  transition: background-color .25s ease-in, color .25s ease-in;
+
+  mat-spinner {
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    position: absolute;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    
+    &.loaded {
+      opacity: 1;
+    }
+  }
+}
